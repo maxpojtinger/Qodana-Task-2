@@ -3,8 +3,6 @@ package Task2;
 import java.io.File;
 import java.util.*;
 
-import Task2.Problem;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -27,8 +25,4 @@ public class Main {
         }
         task2.task2(files);
     }
-    /*
-    Note: I'm not checking the analysis results for having the correct JSON schema
-    I anticipate you testing my code with input with valid JSON schemes.
-     */
 }
