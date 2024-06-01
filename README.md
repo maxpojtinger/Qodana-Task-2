@@ -1,4 +1,4 @@
-Test task 2
+This has been a test task for an application for an internship at JetBrains:
 
 The code analysis tool "Bugban" provides analysis results in a JSON format that complies with the given schema:
 
