@@ -2,6 +2,7 @@ This has been a test task for an application for an internship at JetBrains:
 
 The code analysis tool "Bugban" provides analysis results in a JSON format that complies with the given schema:
 
+´´´
 {
   "type": "object",
   "properties": {
@@ -22,22 +23,24 @@ The code analysis tool "Bugban" provides analysis results in a JSON format that 
               }
             }
           },
-          "required": ["hash", "data"],
+          "required": \["hash", "data"],
           "additionalProperties": false
       }
     }
   },
-  "required": ["problems"],
+  "required": \["problems"],
   "additionalProperties": false
 }
+´´´
 
 Example:
 
+´´´
 {
-  "problems": [
+  "problems": \[
     {
       "hash": "4308iv8",
-      "data": [
+      "data": \[
         "NullPointerCheck",
         "Possible NullPointerException",
         "A.java",
@@ -49,7 +52,7 @@ Example:
     },
     {
       "hash": "3b9ba51",
-      "data": [
+      "data": \[
         "build.gradle",
         "3:5:10",
         "Vulnerable Dependency",
@@ -62,6 +65,7 @@ Example:
     ...
   ]
 }
+´´´
 
 Your task is to develop a program which, given two Bugban analysis output files, will generate three JSON files (according to the schema above): one for the problems only detected in the first Bugban analysis, one for the problems only detected in the second analysis, and one for the problems identified in both analyses.
 
